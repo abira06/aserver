@@ -1,102 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Study Materials</title>
-  <style>
-    /* Reset some default styles */
-    body, ul {
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Study Materials</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+  body {
+    margin: 0;
+    background: #121212;
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #00e5ff;
+    text-shadow: 0 0 8px #00e5ff;
+  }
+
+  h2 {
+    color: #00b8d4;
+    border-bottom: 3px solid #00b8d4;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    background: #1e1e1e;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    padding: 18px 24px;
+    box-shadow: 0 4px 12px rgba(0, 229, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  li:hover {
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.5);
+    transform: translateY(-5px);
+  }
+
+  a {
+    text-decoration: none;
+    color: #00e5ff;
+    font-weight: 500;
+    font-size: 1.15rem;
+    display: block;
+  }
+
+  a:hover {
+    color: #00b8d4;
+  }
+
+  @media (max-width: 480px) {
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f4f8;
-      color: #333;
-      line-height: 1.6;
-      padding: 40px 20px;
-      max-width: 700px;
-      margin: auto;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      background: linear-gradient(135deg, #e0f7fa, #80deea);
+      padding: 20px 10px;
     }
 
     h1 {
-      text-align: center;
-      font-size: 2.8rem;
-      margin-bottom: 30px;
-      color: #00796b;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #004d40;
-      border-bottom: 2px solid #00796b;
-      padding-bottom: 8px;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      font-weight: 700;
-    }
-
-    ul {
-      list-style: none;
+      font-size: 2.2rem;
     }
 
     li {
-      background: white;
-      margin-bottom: 12px;
-      padding: 12px 15px;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      transition: box-shadow 0.3s ease;
-    }
-
-    li:hover {
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      padding: 14px 18px;
     }
 
     a {
-      text-decoration: none;
-      color: #00796b;
-      font-weight: 600;
-      font-size: 1.1rem;
-      display: block;
+      font-size: 1rem;
     }
-
-    a:hover {
-      color: #004d40;
-    }
-
-    /* Responsive */
-    @media (max-width: 480px) {
-      body {
-        padding: 20px 10px;
-        max-width: 95%;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <h1>Study Materials</h1>
+  <div class="container">
+    <h1>Study Materials</h1>
 
-  <h2>Database (DB)</h2>
-  <ul>
-    <li><a href="DB module1 material.pdf" target="_blank" download>DB module1 material (PDF)</a></li>
-    <li><a href="DB Practice test1.pdf" target="_blank" download>DB Practice test1 (PDF)</a></li>
-  </ul>
+    <h2>Database (DB)</h2>
+    <ul>
+      <li><a href="DB module1 material.pdf" target="_blank" download>DB module1 material (PDF)</a></li>
+      <li><a href="DB Practice test1.pdf" target="_blank" download>DB Practice test1 (PDF)</a></li>
+    </ul>
 
-  <h2>SQL Lab Manuals</h2>
-  <ul>
-    <li><a href="II AI&DS SQL LAB MANUAL.docx" target="_blank" download>II AI&DS SQL LAB MANUAL (DOCX)</a></li>
-    <li><a href="lab mannual.docx" target="_blank" download>Lab Manual (DOCX)</a></li>
-  </ul>
+    <h2>SQL Lab Manuals</h2>
+    <ul>
+      <li><a href="II AI&DS SQL LAB MANUAL.docx" target="_blank" download>II AI&DS SQL LAB MANUAL (DOCX)</a></li>
+      <li><a href="lab mannual.docx" target="_blank" download>Lab Manual (DOCX)</a></li>
+    </ul>
 
-  <h2>Statistical Analysis and Computing (SAC)</h2>
-  <ul>
-    <li><a href="Statistical Analysis and Computing Lab Manual (2).docx" target="_blank" download>Statistical Analysis and Computing Lab Manual (DOCX)</a></li>
-  </ul>
-
-</body>
-</html>
+    <h2>Statistical Analysis and Computing (SAC)</h2>
+    <ul
